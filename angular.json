@@ -125,6 +125,46 @@
           }
         }
       }
+    },
+    "@aurochses/angular-template-fuze": {
+      "root": "projects/aurochses/angular-template-fuze",
+      "sourceRoot": "projects/aurochses/angular-template-fuze/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/aurochses/angular-template-fuze/tsconfig.lib.json",
+            "project": "projects/aurochses/angular-template-fuze/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/aurochses/angular-template-fuze/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/aurochses/angular-template-fuze/src/test.ts",
+            "tsConfig": "projects/aurochses/angular-template-fuze/tsconfig.spec.json",
+            "karmaConfig": "projects/aurochses/angular-template-fuze/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/aurochses/angular-template-fuze/tsconfig.lib.json",
+              "projects/aurochses/angular-template-fuze/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "demo"

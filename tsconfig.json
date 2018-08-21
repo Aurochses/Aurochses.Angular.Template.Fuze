@@ -16,6 +16,15 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@aurochses/angular-template-fuze": [
+        //"dist/aurochses/angular-template-fuze"
+        "projects/aurochses/angular-template-fuze/src/public_api.ts"
+      ],
+      "@aurochses/angular-template-fuze/*": [
+        "dist/aurochses/angular-template-fuze/*"
+      ]
+    }
   }
 }
