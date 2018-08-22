@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -11,6 +11,9 @@ import { ToolbarComponent } from './toolbar.component';
         ToolbarComponent
     ],
     imports: [
+        MatButtonModule,
+        MatIconModule,
+        MatMenuModule,
         MatToolbarModule,
 
         FlexLayoutModule
