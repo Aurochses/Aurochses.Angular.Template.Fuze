@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ProgressBarModule } from '@aurochses/angular-progress-bar';
 
+import { TemplateModule } from '@aurochses/angular-template-fuze';
+
 import { AppComponent } from './app.component';
 
 const appRoutes: Routes = [
@@ -23,7 +25,9 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
 
-    ProgressBarModule
+    ProgressBarModule,
+
+    TemplateModule
   ],
   bootstrap: [
     AppComponent
