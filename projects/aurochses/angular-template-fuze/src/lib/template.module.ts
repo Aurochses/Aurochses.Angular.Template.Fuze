@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { ToolbarModule } from './components/toolbar/toolbar.module';
+import { NavbarModule } from './components/navbar/navbar.module';
 
 import { TemplateComponent } from './template.component';
 
@@ -9,7 +10,8 @@ import { TemplateComponent } from './template.component';
     TemplateComponent
   ],
   imports: [
-    ToolbarModule
+    ToolbarModule,
+    NavbarModule
   ],
   exports: [
     TemplateComponent

@@ -1,3 +1,15 @@
-<aur-toolbar></aur-toolbar>
+<div id="main">
 
-TEMPLATE
+    <aur-toolbar></aur-toolbar>
+
+    <div id="container-1" class="container">
+
+        <!-- <fuse-sidebar name="navbar" class="navbar-fuse-sidebar" [folded]="fuseConfig.layout.navbar.folded" *ngIf="!fuseConfig.layout.navbar.hidden"> -->
+            <aur-navbar [variant]="fuseConfig.layout.navbar.variant" class="left-navbar" [ngClass]="fuseConfig.layout.navbar.background"></aur-navbar>
+        <!-- </fuse-sidebar> -->
+
+    </div>
+
+    TEMPLATE
+
+</div>
