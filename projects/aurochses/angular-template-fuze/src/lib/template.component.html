@@ -4,8 +4,8 @@
 
     <div id="container-1" class="container">
 
-        <!-- <fuse-sidebar name="navbar" class="navbar-fuse-sidebar" [folded]="fuseConfig.layout.navbar.folded" *ngIf="!fuseConfig.layout.navbar.hidden"> -->
-            <aur-navbar></aur-navbar>
+        <!-- <fuse-sidebar name="navbar" class="navbar-fuse-sidebar" [folded]="fuseConfig.layout.navbar.folded" lockedOpen="gt-md" *ngIf="!fuseConfig.layout.navbar.hidden"> -->
+            <aur-navbar class="left-navbar" [ngClass]="configuration.layout.navbar.background"></aur-navbar>
         <!-- </fuse-sidebar> -->
 
     </div>

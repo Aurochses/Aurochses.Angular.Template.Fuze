@@ -1,4 +1,5 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { ToolbarModule } from './components/toolbar/toolbar.module';
 import { NavbarModule } from './components/navbar/navbar.module';
@@ -15,6 +16,8 @@ import { TemplateComponent } from './template.component';
     TemplateComponent
   ],
   imports: [
+    CommonModule,
+
     ToolbarModule,
     NavbarModule
   ],

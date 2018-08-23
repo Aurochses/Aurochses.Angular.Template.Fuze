@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { TemplateConfiguration } from './models/template-configuration.model';
+
+import { TemplateService } from './services/template.service';
 
 @Component({
   selector: 'aur-template',
   templateUrl: './template.component.html',
   styleUrls: ['template.component.scss'],
 })
-export class TemplateComponent implements OnInit {
+export class TemplateComponent {
 
-  constructor() { }
+  configuration: TemplateConfiguration;
 
-  ngOnInit() {
+  constructor(templateService: TemplateService) {
+    this.configuration = templateService.configuration;
   }
 
 }
