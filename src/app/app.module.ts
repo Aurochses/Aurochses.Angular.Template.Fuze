@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
+import { environment } from '../environments/environment';
+
 import { ProgressBarModule } from '@aurochses/angular-progress-bar';
 
 import { TemplateModule } from '@aurochses/angular-template-fuze';
@@ -27,7 +29,7 @@ const appRoutes: Routes = [
 
     ProgressBarModule,
 
-    TemplateModule
+    TemplateModule.forRoot(environment, environment.templateConfiguration),
   ],
   bootstrap: [
     AppComponent

@@ -1,3 +1,6 @@
+import { templateConfiguration } from '../environments/template-configuration';
+
 export const environment = {
-  production: true
+  production: true,
+  templateConfiguration: templateConfiguration
 };
